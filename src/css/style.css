@@ -3,6 +3,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .urna {
@@ -17,7 +18,54 @@ body {
     height: 320px;
     background: linear-gradient(to right, #e8e8e8, #c1c1c1);
     border: 2px solid #555;
+    display: flex;
+    flex-direction: column;
 
+}
+
+.primeira-divisao {
+    flex: 1;
+    display: flex;
+}
+
+.primeira-divisao-esquerda {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.primeira-subdivisao {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.segunda-subdivisao {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.terceira-subdivisao {
+    height: 50px;
+}
+
+.quarta-subdivisao {
+    line-height: 30px;
+
+}
+
+.primeira-divisao-direita {
+    width: 90px;
+}
+
+.segunda-divisao {
+    height: 50px;
+    font-size: 14px;
+    border-top: 2px solid #000;
+    padding-left: 10px;
 }
 
 .teclado {
