@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="src/css/style.css">
     <title>"BSP" - Best Soccer Player</title>
 </head>
-<body>
+<body>  
     <div class="urna">
         <div class="tela">
             <div class="primeira-divisao">
@@ -16,12 +16,12 @@
                         <span>SEU VOTO PARA:</span>
                     </div>
                     <div class="segunda-subdivisao">
-                        <span>JOGADOR:</span>
+                        <span>JOGADOR</span>
                     </div>
                     <div class="terceira-subdivisao">
                         <div class="numero-jogador">
-                            <div class="numero">3</div>
-                            <div class="numero">8</div>
+                            <div class="numero pisca"></div>
+                            <div class="numero"></div>
                         </div>
                     </div>
                     <div class="quarta-subdivisao">
@@ -31,7 +31,10 @@
                     </div>
                 </div>
                 <div class="primeira-divisao-direita">
-                    ...
+                    <div class="img-jogador">
+                        <img src="/src/img/vinicius-jr.jpg" alt="">
+                        Jogador fulano
+                    </div>
                 </div>
             </div>
             <div class="segunda-divisao">
@@ -42,31 +45,32 @@
         </div>
         <div class="teclado">
             <div class="teclado-linha">
-                <div class="teclado-botao">1</div>
-                <div class="teclado-botao">2</div>
-                <div class="teclado-botao">3</div>
+                <div class="teclado-botao" onclick="clicou('1')">1</div>
+                <div class="teclado-botao" onclick="clicou('2')">2</div>
+                <div class="teclado-botao" onclick="clicou('3')">3</div>
             </div>
             <div class="teclado-linha">
-                <div class="teclado-botao">4</div>
-                <div class="teclado-botao">5</div>
-                <div class="teclado-botao">6</div>
+                <div class="teclado-botao" onclick="clicou('4')">4</div>
+                <div class="teclado-botao" onclick="clicou('5')">5</div>
+                <div class="teclado-botao" onclick="clicou('6')">6</div>
             </div>
             <div class="teclado-linha">
-                <div class="teclado-botao">7</div>
-                <div class="teclado-botao">8</div>
-                <div class="teclado-botao">9</div>
+                <div class="teclado-botao" onclick="clicou('7')">7</div>
+                <div class="teclado-botao" onclick="clicou('8')">8</div>
+                <div class="teclado-botao" onclick="clicou('9')">9</div>
             </div>
             <div class="teclado-linha">
-                <div class="teclado-botao">0</div>
+                <div class="teclado-botao" onclick="clicou('0')">0</div>
             </div>
             <div class="teclado-linha">
-                <div class="teclado-botao btn-branco">BRANCO</div>
-                <div class="teclado-botao btn-corrige">CORRIGE</div>
-                <div class="teclado-botao btn-confirma">CONFIRMA</div>
+                <div class="teclado-botao btn-branco" onclick="branco()">BRANCO</div>
+                <div class="teclado-botao btn-corrige" onclick="corrige()">CORRIGE</div>
+                <div class="teclado-botao btn-confirma" onclick="confirma()">CONFIRMA</div>
             </div>
         </div>
     </div>
 
-    
+    <script src="/src/js/jogadores.js"></script>
+    <script src="/src/js/scripts.js"></script>
 </body>
 </html>
